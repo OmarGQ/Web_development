@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<h3> Completa el siguiente formulario</h3>
+	<!-- action =direccion del servidor!-->
+	<!-- method = mecanismo de envio de datos!-->
+	<form name="forma01" action="#" method="post">
+		<label>Nombre</label>
+		<input type="text" name="Nombre" placeholder="Jorge">
+		<br />
+		<label>Apellido paterno</label>
+		<input type="text" name="appaterno" placeholder="Gomez">
+		<br />
+		<label>Apellido materno</label>
+		<input type="text" name="apmaterno" placeholder="Perez">
+		<br />
+		<label>Genero</label><br/>
+		<input type="radio" name="genero">Masculino <br/>
+		<input type="radio" name="genero">Femenino <br/>
+		<input type="radio" name="genero">Prefiero no decir <br/>
+		<br />
+		<label>Mis actividades favoritas</label><br/>
+		<input type="checkbox" name="act">Nadar <br/>
+		<input type="checkbox" name="act">Jugar <br/>
+		<input type="checkbox" name="act">Ir al cine <br/>
+		<input type="checkbox" name="act">Comer pizza <br/>
+		<input type="checkbox" name="act">Viajar <br/>
+		<br/>
+		<label>Promedio escolar</label>
+		<input type="number" name="cal" value="5"><br />
+		<label>Correo electronico</label>
+		<input type="email" name="email" value="usuario@ceti.com"><br />
+		<label>Comenta algo de ti</label><br/>
+		<textarea cols="10" rows="10"></textarea><br/>
+		<label>Sube tu CV</label>
+		<input type="file" name="archivo"><br/>
+		<div align="center">
+			<input type="submit" value="Regista">
+		</div>
+	</form>
+</body>
+</html>

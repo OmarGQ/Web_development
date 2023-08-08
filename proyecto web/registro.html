@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formato.css">
+	<title></title>
+</head>
+<body>
+	<div align="center">
+		<table>
+			<tr>
+				<td>
+					<h1 align="center">Registro</h1>
+					<form>
+						<label>Numero de tarjeta</label>
+						<br>
+						<input type="text" name="targeta" id="targeta" style="width: 250px">
+						<br>
+						<br>
+						<label>Tipo de tarjeta</label>
+						<br>
+						<select name="tipo" style="width: 250px">
+							<option value="1">Banorte</option>
+							<option value="2">Banamex</option>
+							<option value="3">HSBC</option>
+							<option value="4">Bancomer</option>
+							<option value="5">santander</option>
+							<option value="6">scotiabank</option>
+						</select>
+						<br>
+						<br>
+						<label>Fecha de vencimiento</label>
+						<br>
+						<input type="number" name="mes" id="mes" min="1" max="12" style="width: 60px"> /
+						<input type="number" name="ano" id="ano" style="width: 60px">
+						<br>
+						<br>
+						<label>Fecha dde nacimiento</label>
+						<br>
+						<input type="date" name="nac" id="nac" style="width: 250px">
+						<br>
+						<br>
+						<label>Nombre</label>
+						<br>
+						<input type="text" name="nombre" id="nombre" style="width: 250px">
+						<br>
+						<br>
+						<label>Apellidos</label>
+						<br>
+						<input type="text" name="apellido" id="apellido" style="width: 250px">
+						<br>
+						<br>
+						<label>Direccion</label>
+						<br>
+						<input type="text" name="direccion" id="direccion" style="width: 250px">
+						<br>
+						<br>
+						<label>Ciudad</label>
+						<br>
+						<input type="text" name="ciudad" id="ciudad" style="width: 250px">
+						<br>
+						<br>
+						<label>Estado</label>
+						<br>
+						<input type="text" name="estado" id="estado" style="width: 250px">
+						<br>
+						<br>
+						<label>Codigo postal</label>
+						<br>
+						<input type="text" name="postal" id="postal" style="width: 250px">
+						<br>
+						<br>
+						<label>Correo electronico</label>
+						<br>
+						<input type="text" name="email" id="email" style="width: 250px">
+						<br>
+						<br>
+						<label>Contrasena</label>
+						<br>
+						<input type="password" name="pas" id="pas" style="width: 250px">
+						<br>
+						<br>
+						<input type="submit" name="subir" value="Subir" style="width: 100px">
+						<input type="reset" name="borrar" value="Borrar" style="width: 100px">
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+	background-color: black;
+	color: white;
+}
+button{
+	font-size: 15px;
+	color: white;
+	background-color: blue;
+	align-self: right;
+}

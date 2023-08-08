@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formato.css">
+	<title></title>
+</head>
+<body>
+	<table width="100%" style="background-color: brown">
+		<tr>
+			<td height="100" width="15%" align="center">
+				<img src="imagen/imp.jpg" width="100" height="100">
+			</td>
+			<td>
+				<table width="100%">
+					<tr>
+						<form name="busqueda"> 
+							<td width="60%" height="50" align="center">
+								<input type="text" name="busqueda" id="busqueda" style="width: 250px; border-radius: 50px">
+								<input type="submit" name="buscar" value="Buscar" style="background-color: blue; color: white; width: 90px; border-radius: 5px">
+								<button style="background-color: green; color: white; width: 90px; border-radius: 5px">Carrito</button>
+							</td>
+						</form>
+						<td width="40%" align="center">
+							<input type="text" name="usuario" id="usuario" placeholder="Correo" style="width: 150px">
+							<input type="password" name="password" id="password" placeholder="Contraseña" style="width: 150px">
+						</td>
+					</tr>
+					<tr>
+						<td height="50" align="center">
+							<table width="80%" style="background-color: #fffcec; border-radius: 5px; border-collapse: collapse" border="1">
+								<tr>
+									<td width="33%" align="center">
+										<a href="home.html" target="inferior">
+											<button style="background-color: transparent; border-color: transparent; height: 50px; width: 160px" >Home</button>
+										</a>
+									</td>
+									<td width="33%" align="center">
+										<a href="producto.html" target="inferior">
+											<button style="background-color: transparent; border-color: transparent; height: 50px; width: 160px" >Productos</button>
+										</a>
+									</td>
+									<td width="33%" align="center">
+										<a href="tiendas.html" target="inferior">
+											<button style="background-color: transparent; border-color: transparent; height: 50px; width: 160px" >Tiendas</button>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td align="center" valign="top">
+							<button style="width: 100px; border-radius: 5px">Login</button>
+							<a href="registro.html" target="_blank" onclick="window.open(this.href, this.target, 'width=350,height=400'); return false;">
+								<button style="width: 100px; border-radius: 5px">Registrarse</button>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

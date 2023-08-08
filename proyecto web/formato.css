@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.imgPro{
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+}
+img.img{
+	width: 70px;
+	height: 70px;
+	padding: 5px;
+}
+img.hom{
+	width: 230px;
+	height: 230px;
+	padding: 5px;
+}
+button.sub{
+
+}
