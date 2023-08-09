@@ -1,0 +1,169 @@
+label{
+	font-size: 2em;
+}
+input{
+	height: 1.5em;
+}
+.map{
+	height: 38.5em;
+}
+table.semana{
+	background-color: #fffcec; 
+	border-radius: 40px;
+	border-collapse: collapse;
+}
+button.semana{
+	background-color: transparent; 
+	border-color: transparent;
+	height: 3.5em;
+	width: 3.7em;
+	font-size: 1em;
+}
+.objeto{
+	height: 5em;
+	width: 5em;
+}
+#agregar{
+	background-color: white; 
+	border-color: blue;
+	color: blue; 
+	width: 2em; 
+	height: 2em; 
+	border-radius: 100px; 
+	font-size: 3em;
+}
+#actualizar{
+	background-color: white; 
+	border-color: blue;
+	color: blue; 
+	width: 6em; 
+	height: 3em; 
+	border-radius: 100px; 
+	font-size: 1.5em;
+	position: absolute;
+	top:  21.2em;
+  	left: 44em;
+}
+#registrar{
+	background-color: green; 
+	color: white; 
+	width: 7em; 
+	height: 1.5em; 
+	border-radius: 20px; 
+	font-size: 1em;
+}
+#mesan{
+	font-size: 3em;
+}
+#diaS{
+	font-size: 3em;
+}
+.mesat5{
+	height: 3.5em;
+}
+.mesat4{
+	height: 5em;
+}
+.mesat2{
+	height: 5em;
+}
+#mesa1{
+	position: absolute;
+	top:  23em;
+  	left: 34em;
+}
+#mesa2{
+	position: absolute;
+	top:  2em;
+  	left: 15em;
+}
+#mesa3{
+	position: absolute;
+	top:  7em;
+  	left: 13em;
+}
+#mesa4{
+	position: absolute;
+	top:  23em;
+  	left: 25em;
+}
+#mesa5{
+	position: absolute;
+	top:  26em;
+  	left: 42em;
+}
+#mesa6{
+	position: absolute;
+	top:  22em;
+  	left: 42em;
+}
+#mesa7{
+	position: absolute;
+	top:  29em;
+  	left: 32.5em;
+}
+#mesa8{
+	position: absolute;
+	top:  29em;
+  	left: 24em;
+}
+#mesa9{
+	position: absolute;
+	top:  12em;
+  	left: 11em;
+}
+#mesa10{
+	position: absolute;
+	top:  32.5em;
+  	left: 24em;
+}
+#mesa11{
+	position: absolute;
+	top:  29.2em;
+  	left: 42.2em;
+}
+#mesa12{
+	position: absolute;
+	top:  26em;
+  	left: 14em;
+}
+#mesa13{
+	position: absolute;
+	top:  31em;
+  	left: 14em;
+}
+#mesa14{
+	position: absolute;
+	top:  10em;
+  	left: 15em;
+}
+#mesa15{
+	position: absolute;
+	top:  15em;
+  	left: 15em;
+}
+#mesa16{
+	position: absolute;
+	top:  33em;
+  	left: 19em;
+}
+#mesa17{
+	position: absolute;
+	top:  32.5em;
+  	left: 32em;
+}
+#mesa18{
+	position: absolute;
+	top:  33em;
+  	left: 38em;
+}
+#mesa19{
+	position: absolute;
+	top:  26em;
+  	left: 32.5em;
+}
+#mesa20{
+	position: absolute;
+	top:  26em;
+  	left: 24em;
+}

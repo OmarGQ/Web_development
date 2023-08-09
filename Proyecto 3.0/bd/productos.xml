@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Servidor: 127.0.0.1:3306
+- Tiempo de generación: 23-02-2019 a las 16:29:03
+- Versión del servidor: 5.7.24
+- Versión de PHP: 7.2.14
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="restaurante" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="productos">
+                CREATE TABLE `productos` (
+                  `id` varchar(3) NOT NULL,
+                  `nombre` varchar(60) NOT NULL,
+                  `precio` int(6) NOT NULL,
+                  `clase` enum('computadora','teléfono','televicion','bocinas','videojuegos') NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de datos: 'restaurante'
+    -->
+    <database name="restaurante">
+        <!-- Tabla productos -->
+        <table name="productos">
+            <column name="id">c0</column>
+            <column name="nombre">Notebook HP 240 G6</column>
+            <column name="precio">5699</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c1</column>
+            <column name="nombre">Computadora Hp 6305 Pro </column>
+            <column name="precio">8850</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c2</column>
+            <column name="nombre">Notebook HP Envy 13-ah0001la</column>
+            <column name="precio">13999</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c3</column>
+            <column name="nombre">Notebook HP 15-da0011la</column>
+            <column name="precio">14399</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c4</column>
+            <column name="nombre">Apple - MacBook Pro MPXR2E/A de 13.3&quot;</column>
+            <column name="precio">26999</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c5</column>
+            <column name="nombre">Notebook HP 240 G6</column>
+            <column name="precio">5699</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c6</column>
+            <column name="nombre">Computadora Hp 6305 Pro </column>
+            <column name="precio">8850</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c7</column>
+            <column name="nombre">Computadora Portátil 2 En 1 - Lenovo Ideapad Yoga 910-13ikb</column>
+            <column name="precio">37277</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c8</column>
+            <column name="nombre">Computadora Amd Dual Core + Punto De Venta Completo</column>
+            <column name="precio">8299</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c9</column>
+            <column name="nombre">Computadora De Escritorio Intel Celeron Monitor 19</column>
+            <column name="precio">400</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c10</column>
+            <column name="nombre">Notebook HP ProBook 440 G5</column>
+            <column name="precio">19329</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">c11</column>
+            <column name="nombre">Laptop HP 15-DA0001LA 15.6'', Intel Celeron N4000 2.60GHz</column>
+            <column name="precio">5649</column>
+            <column name="clase">computadora</column>
+        </table>
+        <table name="productos">
+            <column name="id">t0</column>
+            <column name="nombre">Celular Xiaomi Redmi S2</column>
+            <column name="precio">4650</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t1</column>
+            <column name="nombre">Xiaomi Redmi Note 5 Global</column>
+            <column name="precio">4499</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t2</column>
+            <column name="nombre">Hisense L675 Pro</column>
+            <column name="precio">1599</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t3</column>
+            <column name="nombre">Galaxy S9 Plus</column>
+            <column name="precio">15999</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t4</column>
+            <column name="nombre">Xiaomi Redmi 6 </column>
+            <column name="precio">3320</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t5</column>
+            <column name="nombre">Huawei ANE-LX3 P20 Lite Rosa R4</column>
+            <column name="precio">6499</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t6</column>
+            <column name="nombre">Stylos Sos Dingo Ng</column>
+            <column name="precio">349</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t7</column>
+            <column name="nombre">W&amp;O COLOR AZUL</column>
+            <column name="precio">999</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t8</column>
+            <column name="nombre">Huawei Y6</column>
+            <column name="precio">3189</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">t9</column>
+            <column name="nombre">iPhone 7 Plus</column>
+            <column name="precio">5837</column>
+            <column name="clase">teléfono</column>
+        </table>
+        <table name="productos">
+            <column name="id">s0</column>
+            <column name="nombre">TCL 720p de 32&quot; Roku Smart TV</column>
+            <column name="precio">2999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s1</column>
+            <column name="nombre">Samsung UN55NU7300FXZX Smart TV Curvo 55&quot;</column>
+            <column name="precio">17999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s2</column>
+            <column name="nombre">TV LG 43&quot; 4K Ultra HD Smart TV LED 43UJ6200</column>
+            <column name="precio">7999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s3</column>
+            <column name="nombre">JVC LED 32&quot; HD Smart TV SI32HS</column>
+            <column name="precio">4799</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s4</column>
+            <column name="nombre">Pantalla sceptre x322b-srr 32&quot; + chromecast</column>
+            <column name="precio">1975</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s5</column>
+            <column name="nombre">Television Spectra 32  Vga Facturada</column>
+            <column name="precio">2499</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s6</column>
+            <column name="nombre">Hisense 40H5D Smart TV 40&quot;</column>
+            <column name="precio">5699</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s7</column>
+            <column name="nombre">Ghia TV-514 23.6&quot; HD Negro</column>
+            <column name="precio">2099</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s8</column>
+            <column name="nombre">Hisense 32H3D</column>
+            <column name="precio">2999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s9</column>
+            <column name="nombre">Samsung 24&quot; LT24D310NHS/ZX</column>
+            <column name="precio">2719</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s10</column>
+            <column name="nombre">LG 43UK6250PUB 43&quot; 4K HDR Smart Tv</column>
+            <column name="precio">9999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s11</column>
+            <column name="nombre">smart tv led Samsung un50mu6103fxzx</column>
+            <column name="precio">8999</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">s12</column>
+            <column name="nombre">LG 43lj5500 43&quot; Smart Tv</column>
+            <column name="precio">6940</column>
+            <column name="clase">televicion</column>
+        </table>
+        <table name="productos">
+            <column name="id">m0</column>
+            <column name="nombre">Pioneer - Minicomponente X-CM56W </column>
+            <column name="precio">5498</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m1</column>
+            <column name="nombre">LG - Minicomponente X Boom OJ98 </column>
+            <column name="precio">11998</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m2</column>
+            <column name="nombre">Pioneer - Minicomponente X-CM56B </column>
+            <column name="precio">5499</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m3</column>
+            <column name="nombre">LG - Minicomponente X Boom CJ45 </column>
+            <column name="precio">2990</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m4</column>
+            <column name="nombre">LG - Minicomponente One Body OM4560</column>
+            <column name="precio">3849</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m5</column>
+            <column name="nombre">Panasonic - Minicomponente Onebody SC-UA70 </column>
+            <column name="precio">12999</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">m6</column>
+            <column name="nombre">Sony - Minicomponente con Bluetooth y NFC MHC-V50D</column>
+            <column name="precio">6999</column>
+            <column name="clase">bocinas</column>
+        </table>
+        <table name="productos">
+            <column name="id">v0</column>
+            <column name="nombre">Consola Nintendo Nes Classic Edition</column>
+            <column name="precio">2399</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v1</column>
+            <column name="nombre">Nintendo Switch Joy-con 32gb</column>
+            <column name="precio">7005</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v2</column>
+            <column name="nombre">Consola super nintendo clasic mini </column>
+            <column name="precio">596</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v3</column>
+            <column name="nombre">My Arcade Mini Consola Retro - Burguer Time Edition </column>
+            <column name="precio">1948</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v4</column>
+            <column name="nombre">PlayStation Consola PS4 1 TB</column>
+            <column name="precio">7699</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v5</column>
+            <column name="nombre">PSega Consola Clasica Genesis</column>
+            <column name="precio">999</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v6</column>
+            <column name="nombre">Consola Nintendo 2ds Ocarina Of Time</column>
+            <column name="precio">2399</column>
+            <column name="clase">videojuegos</column>
+        </table>
+        <table name="productos">
+            <column name="id">v7</column>
+            <column name="nombre">Consola Xbox One 1 TB</column>
+            <column name="precio">4599</column>
+            <column name="clase">videojuegos</column>
+        </table>
+    </database>
+</pma_xml_export>

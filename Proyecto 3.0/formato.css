@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 2em;
+}
+span{
+	font-size: 2em;
+}
+label{
+	font-size: 1.5em;
+}
+.imgPro{
+	width: 15em;
+	height: 15em;
+	padding: 5px;
+}
+img.img{
+	width: 7em;
+	height: 7em;
+	padding: 5px;
+}
+img.hom{
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+td.lista{
+	font-size: 5em;
+}
+#c4{
+	height: 5em;
+}
+#c5{
+	height: 5em;
+}
+#c6{
+	height: 5em;
+}
+#c7{
+	height: 5em;
+}
+#c8{
+	height: 5em;
+}

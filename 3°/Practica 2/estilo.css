@@ -1,0 +1,11 @@
+img.main{
+	width: 70px;
+	height: 70px;
+}
+body{
+	background-color: rgb(252, 255, 199);
+}
+table{
+	border-color: black;
+	border: 5px;
+}

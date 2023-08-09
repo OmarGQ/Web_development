@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formato.css?2">
+	<script type="text/javascript" src="funciones.js?3"></script>
+	<title></title>
+</head>
+<body onload="loadDoc()">
+	<section>
+		<table width="100%">
+			<tr>
+				<td>
+					<img src="Imagenes/fondo.png" class="map">
+				</td>
+				<td width="30em">
+					<table width="100%" style="background-color: #00E2FF; border-radius: 3em">
+						<tr>
+							<td>
+								<div align="center">
+									<span id="diaS"></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<nav>
+									<table width="90%" class="semana" border="0">
+										<tr>
+											<td align="center">
+												<button class="semana" onclick="cambio('Lunes')">L</button>
+											</td>
+											<td align="center">
+												<button class="semana" onclick="cambio('Martes')">MA</button>
+											</td>
+											<td align="center">
+												<button class="semana" onclick="cambio('Miercoles')">MI</button>
+											</td>
+											<td  align="center">
+												<button class="semana" onclick="cambio('Jueves')">J</button>
+											</td>
+											<td align="center">
+												<button class="semana" onclick="cambio('Viernes')">V</button>
+											</td>
+											<td align="center">
+												<button class="semana" onclick="cambio('Sabado')">S</button>
+											</td>
+											<td align="center">
+												<button class="semana" onclick="cambio('Domingo')">D</button>
+											</td>
+										</tr>
+									</table>
+								</nav>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div id="mesan">
+									Mesa: 
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<form name="form1" id="f1">
+										<tr>
+											<td>
+												<label>Nombre: </label>
+											</td>
+											<td>
+												<input type="text" name="nombre" id="nombre">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label>Clientes: </label>
+											</td>
+											<td>
+												<input type="number" min="1" max="5" name="cant" id="cant">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label>Hora de inicio: </label>
+											</td>
+											<td>
+												<table>
+												<tr>
+													<td style="background-color: white">
+														<input style="border-color: transparent; width: 3em" type="number" name="horaIn1" id="horaIn1" max="24" min="0"> :
+														<input style="border-color: transparent; width: 3em" type="number" name="horaIn2" id="horaIn2" max="60" min="0">
+													</td>
+												</tr>
+											</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label>Hora de salida: </label>
+											</td>
+											<td>
+												<table>
+													<tr>
+														<td style="background-color: white">
+															<input style="border-color: transparent; width: 3em" type="number" name="horaOut1" id="horaOut1" max="24" min="0"> :
+															<input style="border-color: transparent; width: 3em" type="number" name="horaOut2" id="horaOut2" max="60" min="0">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</form>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+								<br>
+								<button id="registrar" onclick="reservar()">Registrar</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+								<br>
+								<button id="agregar" onclick="agregar()">+</button>
+								<button id="actualizar" onclick="actualizar()">Actualizar</button>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div align="center">
+			<p>Omar Ildefonso Godinez Quiñones danielcot8@hotmail.com</p>
+		</div>
+		<div id="mesaD1">
+			<img src="Imagenes/mesa5.png" class="mesat5" id="mesa1" onclick="agregado(1)">
+		</div>
+		<div id="mesaD2">
+			<img src="Imagenes/mesa5.png" class="mesat5" id="mesa2" onclick="agregado(2)">
+		</div>
+		<div id="mesaD3">
+			<img src="Imagenes/mesa5.png" class="mesat5" id="mesa3" onclick="agregado(3)">
+		</div>
+		<div id="mesaD4">
+			<img src="Imagenes/mesa5.png" class="mesat5" id="mesa4" onclick="agregado(4)">
+		</div>
+		<div id="mesaD5">
+			<img src="Imagenes/mesa4.png" class="mesat4" id="mesa5" onclick="agregado(5)">
+		</div>
+		<div id="mesaD6">
+			<img src="Imagenes/mesa4.png" class="mesat4" id="mesa6" onclick="agregado(6)">
+		</div>
+		<div id="mesaD7">
+			<img src="Imagenes/mesa2.png" class="mesat2" id="mesa7" onclick="agregado(7)">
+		</div>
+		<div id="mesaD8">
+			<img src="Imagenes/mesa2.png" class="mesat2" id="mesa8" onclick="agregado(8)">
+		</div>
+		<div id="mesaD9">
+			<img src="Imagenes/mesa4.png" class="mesat4" id="mesa9" onclick="agregado(9)">
+		</div>
+		<div id="mesaD10">
+			<img src="Imagenes/mesa4.png" class="mesat4" id="mesa10" onclick="agregado(10)">
+		</div>
+		<div id="mesaD11">
+			<img src="" class="mesat2" id="mesa11" onclick="agregado(11)">
+		</div>
+		<div id="mesaD12">
+			<img src="" class="mesat2" id="mesa12" onclick="agregado(12)">
+		</div>
+		<div id="mesaD13">
+			<img src="" class="mesat2" id="mesa13" onclick="agregado(13)">
+		</div>
+		<div id="mesaD14">
+			<img src="" class="mesat4" id="mesa14" onclick="agregado(14)">
+		</div>
+		<div id="mesaD15">
+			<img src="" class="mesat4" id="mesa15" onclick="agregado(15)">
+		</div>
+		<div id="mesaD16">
+			<img src="" class="mesat4" id="mesa16" onclick="agregado(16)">
+		</div>
+		<div id="mesaD17">
+			<img src="" class="mesat4" id="mesa17" onclick="agregado(17)">
+		</div>
+		<div id="mesaD18">
+			<img src="" class="mesat4" id="mesa18" onclick="agregado(18)">
+		</div>
+		<div id="mesaD19">
+			<img src="" class="mesat2" id="mesa19" onclick="agregado(19)">
+		</div>
+		<div id="mesaD20">
+			<img src="" class="mesat2" id="mesa20" onclick="agregado(20)">
+		</div>
+	</section>
+</body>
+</html>

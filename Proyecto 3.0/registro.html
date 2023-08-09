@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="funciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="formato.css">
+	<title></title>
+</head>
+<body style="background-color: brown">
+	<section>
+		<div align="center">
+			<table>
+				<tr>
+					<td>
+						<h1 align="center">Registro</h1>
+						<form action="registrar.php" method="post">
+							<label>Numero de tarjeta</label>
+							<br>
+							<input type="text" name="targeta" id="targeta" style="width: 17em">
+							<br>
+							<br>
+							<label>Tipo de tarjeta</label>
+							<br>
+							<select name="tipo" style="width: 17em">
+								<option value="1">Banorte</option>
+								<option value="2">Banamex</option>
+								<option value="3">HSBC</option>
+								<option value="" alue="4">Bancomer</option>
+								<option value="5">santander</option>
+								<option value="6">scotiabank</option>
+							</select>
+							<br>
+							<br>
+							<label>Fecha de vencimiento</label>
+							<br>
+							<input type="number" name="mes" id="mes" min="1" max="12" style="width: 4em"> /
+							<input type="number" name="ano" id="ano" style="width: 4em">
+							<br>
+							<br>
+							<label>Fecha dde nacimiento</label>
+							<br>
+							<input type="date" name="nac" id="nac" style="width: 17em">
+							<br>
+							<br>
+							<label>Nombre</label>
+							<br>
+							<input type="text" name="nombre" id="nombre" style="width: 17em">
+							<br>
+							<br>
+							<label>Apellidos</label>
+							<br>
+							<input type="text" name="apellido" id="apellido" style="width: 17em">
+							<br>
+							<br>
+							<label>Direccion</label>
+							<br>
+							<input type="text" name="direccion" id="direccion" style="width: 17em">
+							<br>
+							<br>
+							<label>Ciudad</label>
+							<br>
+							<input type="text" name="ciudad" id="ciudad" style="width: 17em">
+							<br>
+							<br>
+							<label>Estado</label>
+							<br>
+							<input type="text" name="estado" id="estado" style="width: 17em">
+							<br>
+							<br>
+							<label>Codigo postal</label>
+							<br>
+							<input type="text" name="postal" id="postal" style="width: 17em">
+							<br>
+							<br>
+							<label>Correo electronico</label>
+							<br>
+							<input type="text" name="email" id="email" style="width: 17em" onchange="esValidoElCorreo(this.value)">
+							<br>
+							<br>
+							<label>Contrasena</label>
+							<br>
+							<input type="password" name="pas" id="pas" style="width: 17em" placeholder="Contraseña mayor de 6 caracteres" onchange="medirFuerzaContraseña(this.value)">
+							<br>
+							<input type="checkbox" name="acept" id="acept"  onclick="condiciones()" style="width: 1.2em; height: 1.2em">
+							<label>He leído y estoy de acuerdo con los</label>
+							<a href="imagen/condiciones.pdf" style="font-size: 1.5em" target="_blank" onclick="window.open(this.href, this.target)">Términos y condiciones</a>
+							<br>
+							<br>
+							<div align="center">
+								<input type="submit" name="subir" id="subir" value="Subir" style="width: 6em; border-radius: 3.5em; background-color: #534949; color: white; font-size: 1.5em">
+							</div>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+</body>
+</html>

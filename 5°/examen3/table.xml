@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carro>
+  <producto>
+    <nombre>Taco</nombre>
+    <precio price="10"/>
+    <cantidad cant="1"/>
+  </producto><producto><nombre>Refresco</nombre><precio price="15"/><cantidad cant="4"/></producto></carro>

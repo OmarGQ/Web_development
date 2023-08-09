@@ -1,0 +1,48 @@
+<?php
+	require_once("sesion.php");
+	$email = $_POST['usuario'];	
+	$password = $_POST['password'];
+	$mi_sesion = new Sesion();
+	$mi_sesion->set_sesion($email, $password);
+	$info = $mi_sesion->iniciar_sesion();
+	$dom = new domDocument("1.0", "utf-8");
+	$dom -> formatOutput = true;		
+	$dom -> load("xml/sesion.xml");
+	$raizOG = $dom->getElementsByTagname('sesiones')->item(0);
+		$raiz = $dom->createElement('sesion');			
+			$rama = $dom -> createElement('nombre');
+				$rama -> appendChild($dom->createTextNode($info[0]['nombre']));
+		$raiz -> appendChild($rama);		
+			$rama = $dom -> createElement('apellidos');
+				$rama -> appendChild($dom ->createTextNode($info[0]['apellidos']));
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('direccion');
+				$rama -> appendChild($dom -> createTextNode($info[0]['direccion']));
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('ciudad');
+				$rama -> appendChild($dom -> createTextNode($info[0]['ciudad']));
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('estado');
+				$rama -> appendChild($dom -> createTextNode($info[0]['estado']));
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('postal');
+				$rama -> appendChild($dom -> createTextNode($info[0]['postal']));		
+		$raiz -> appendChild($rama);
+			 $rama = $dom -> createElement('f_nacimiento');
+				$rama -> appendChild($dom -> createTextNode($info[0]['f_nacimiento']));			
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('email');
+				$rama -> appendChild($dom -> createTextNode($info[0]['email']));			
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('tarjeta');
+				$rama -> appendChild($dom -> createTextNode($info[0]['targeta']));		
+		$raiz -> appendChild($rama);
+			$rama = $dom -> createElement('tipo_t');
+				$rama -> appendChild($dom -> createTextNode($info[0]['tipo_t']));			
+		$raiz -> appendChild($rama);
+		$raizOG->appendChild($raiz);
+		$dom -> appendChild($raizOG);		
+		$dom -> save("xml/sesion.xml");
+		header('Location: index.html');
+?>
+
